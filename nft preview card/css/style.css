@@ -1,0 +1,188 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+  html{
+      font-size: 62.5%;
+  }
+  
+  body{
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  section{
+      background-color: hsl(216, 50%, 16%);
+      width: 330px;
+      height: 570px;
+      margin: 100px auto;
+      border-radius: 20px;
+  }
+  
+  section a:hover {
+    color: hsl(178, 100%, 50%);
+
+  }
+
+  .eth{
+    border-radius: 10px;
+    width: 260px;
+    height: 260px;
+    position: relative;
+    top: 20px;
+    left: 35px;
+    font-weight: lighter;
+  }
+
+  h2 a{
+      color: hsl(0, 0%, 100%);
+      position: relative;
+      top: 15px;
+      left: 35px;
+      font-size: 1.8rem;
+      text-decoration: none;
+  }
+  h2 a:hover{
+    color: hsl(178, 100%, 50%);
+  }
+
+  p{
+    position: relative;
+    top: 15px;
+    left: 35px;
+    font-size: 1.8rem;
+    color: hsl(215, 51%, 70%);
+    font-weight: normal;
+  }
+
+  .icon{
+    color: hsl(178, 100%, 50%);
+    position: relative;
+    top: 15px;
+    left: 35px;
+    font-size: 1.5rem;
+  }
+  .clock{
+    color:  hsl(215, 51%, 70%);
+    position: relative;
+    left: 220px;
+    bottom: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .creator{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 25px;
+    position: relative;
+    top: 30px;
+    color: hsl(215, 51%, 70%);
+    font-size: 1.5rem;
+    border-top: 1px solid hsl(215, 32%, 27%);
+  }
+  .creator img{
+    border: 1px solid white;
+    border-radius: 25px;
+    position: relative;
+    left: 35px;
+  }
+  .creator div{
+    position: relative;
+    top: 10px;
+    left: 35px;
+  }
+  .creator div a{
+    color: white;
+    text-decoration: none;
+  }
+  .creator div a:hover{
+    color: hsl(178, 100%, 50%);
+  }
+
+  @media screen and (width: 375px) {
+
+    body{
+      margin: 200px 100px;
+    }
+
+    section{
+    
+      width: 350px;
+      height: 550px;
+   
+  }
+
+    
+  }
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  .attribution { 
+      font-size: 1.1rem; 
+      text-align: center; 
+      color: white;
+    }
+
+  .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }  
